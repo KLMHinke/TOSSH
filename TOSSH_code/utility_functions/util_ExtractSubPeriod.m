@@ -43,6 +43,8 @@ end
 % get months
 doy_vec = day(t, 'dayofyear'); %KH: changed month_vec to doy_vec
 
+%Test Line 2
+
 if strcmp(option,'delete')
     % option 1 - delete values outside subperiod
     t_sub = t(ismember(month_vec,subperiod));
