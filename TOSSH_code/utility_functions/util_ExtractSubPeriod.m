@@ -41,7 +41,7 @@ if nargin < 4
 end
 
 % get months
-[~, month_vec, ~] = ymd(t);
+doy_vec = day(t, 'dayofyear'); %KH: changed month_vec to doy_vec
 
 if strcmp(option,'delete')
     % option 1 - delete values outside subperiod
